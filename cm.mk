@@ -32,8 +32,4 @@ TARGET_KERNEL_SOURCE := kernel/samsung/p1
 TARGET_KERNEL_CONFIG := cyanogenmod_$(PRODUCT_DEVICE)_defconfig
 
 # asserts
-TARGET_OTA_ASSERT_DEVICE := galaxytab,GT-P1000N,GT-P1000,$(PRODUCT_MODEL)
-
-# modem
-PRODUCT_COPY_FILES += device/samsung/p1l/modem.bin:modem.bin
-					  
+TARGET_OTA_ASSERT_DEVICE := galaxytab,$(PRODUCT_MODEL)
